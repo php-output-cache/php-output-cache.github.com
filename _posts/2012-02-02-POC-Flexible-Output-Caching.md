@@ -27,7 +27,6 @@ The functional tests do not cover all the implemented features but can be used t
 
 Let’s have a look at cache_filecache.php
 
-
     use POC\Poc;
     use POC\cache\cacheimplementation\FileCache;
  
@@ -41,7 +40,8 @@ Let’s have a look at cache_filecache.php
 
 The first thing you notice looking at the code snippet above is the way parameters are given to the constructor of the Poc class. Because many parameters can be changed in the classes shipped with the project, I decided to build a more flexible way of handling parameters than the one used in PHP. The user has to pass an array to these objects where the index of the array is the name of the parameter and the value of course is the value of the parameter. If a parameter is not defined in the array the framework will use the builtin default value for that parameter. As the default cache engine is FileCache we could have omitted the PARAM_CACHE parameter in the previous example and define the $poc variable like this:
 
-$poc  = new Poc(array(Poc::PARAM_DEBUG => true));
+    $poc  = new Poc(array(Poc::PARAM_DEBUG => true));
+
 This is a really easy scenario where your application is mocked by the “/lib/text_generator.php” file. This is at the moment a Lorem Ipsum generator. We cache its contents – simply by creating the Poc object – as we can see in the example. We store the generated caches for 5 seconds – it is the default value – and we also want to see some performance information at the end of the cached text so we turned on debugging. We achieve this by adding the last parameter with a “true” value. The Hasher class is an important part of the concept. Let me describe it in the following example.
 
 In this example we used the FileCache engine for caching, but by changing only a few characters we can use  “MemcachedCache”, “RediskaCache”, “MongoCache”, etc. So, it is really easy to implement new caching engines to the project.
@@ -100,27 +100,27 @@ Of course it had to be fast so I didn’t want to rely on external frameworks bu
 
 With this framework you can customize the caching settings to a great extent. Let me list some of these options:
 
-Output caching based on user defined criteria
-Cache invalidation by TTL
-Blacklisting / cache invalidation by application state
-Blacklisting by output content
-For caching it utilizes many interfaces, such as:
-Memcached
-Redis
-MongoDb
-Its own filesystem based engine.
-APC (experimental, performs and works well on a webserver, but unfortunately the CLI interface does not behave like it should and it cannot be unit tested properly so I don’t include it in the master branch)
-For cache tagging it utilizes MySQL but more database engines will be added
-Cache Invalidation by tags
-Minimal overhead on the performance
-Easy to turn on/off
-Controls the headers
-Planned features
+ - Output caching based on user defined criteria
+ - Cache invalidation by TTL
+ - Blacklisting / cache invalidation by application state
+ - Blacklisting by output content
+ - For caching it utilizes many interfaces, such as:
+ - Memcached
+ - Redis
+ - MongoDb
+ - Its own filesystem based engine.
+ - For cache tagging it utilizes MySQL but more database engines will be added
+ - Cache Invalidation by tags
+ - Minimal overhead on the performance
+ - Easy to turn on/off
+ - Controls the headers
+
+#Planned features
 
 As the framework is still in an early state, many new features will be implemented in the future. These include the following:
 
-Edge side includes
-Cache templating with Twig
-statistics stored in database
-And many more
+ - Edge side includes
+ - Cache templating with Twig
+ - statistics stored in database
+ - And many more
 If you have any questions and or suggestions, feel free to leave a comment!
