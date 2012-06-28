@@ -4,6 +4,7 @@
 	require.config({
 	  baseUrl : "{{ site.javascripts.baseUrl }}",
 	});
+
 	require(['order!jquery','jb'], function($, JB){
 	  JB.init(function(){
 	  {% if page.tabify %}
@@ -11,7 +12,24 @@
 	  {% endif %}
 	    $("a[rel='twipsy']").twipsy();
 	    $("a[rel='popover']").popover();
-	  });
+          
+            function resizeContent(){
+	      if ($(".row").height() < $(window).height() )
+              {
+                $(".content").height( $(window).height() - ($(".page-header").height() + $(".navbar").height() + $(".footer").height()) );
+               
+              }
+            }
+            $().ready(function() {
+               resizeContent();
+            });
+           
+            $(window).resize(function() {
+             resizeContent();
+            })  ;
+           });
 	});
 	</script>
+
+
 {% endif %}
