@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Home
+title: 
 tabify: h2
 tagline: 
 ---

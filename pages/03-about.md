@@ -3,6 +3,7 @@ layout: page
 title: "About"
 description: "A really fast description of the project"
 group: navigation
+order: 1
 ---
 {% include JB/setup %}
 
