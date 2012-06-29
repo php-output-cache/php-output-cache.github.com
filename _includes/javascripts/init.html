@@ -16,8 +16,9 @@
             function resizeContent(){
 	      if ($(".row").height() < $(window).height() )
               {
-                $(".content").height( $(window).height() - ($(".page-header").height() + $(".navbar").height() + $(".footer").height()) );
-               
+                //$(".content").height( $(window).height() - ($(".page-header").height() + $(".navbar").height() + $(".footer").height()) + ( ($(".container").height() - $(".content").height())/5) );
+                $(".content").height( $(window).height() - ($(".page-header").height() + $(".navbar").height() + $(".footer").height()) - 5  );
+  
               }
             }
             $().ready(function() {
