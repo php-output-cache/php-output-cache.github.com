@@ -6,6 +6,8 @@ group: navigation
 order: 4
 ---
 {% include JB/setup %}
+##What is POC?
+Poc is an **Output Caching framework** written **for PHP**.
 
 ##Why would I use POC?
  - Because it **saves** you **time** and **money... A LOT**!
@@ -31,6 +33,7 @@ order: 4
  - **Easy** and custom **configuration** that meets your needs.
  - It is **contignously integrated**!
  - **Does not hurts your current logic and** existing **ifrasturcure**, so you don't have to rewrite anyhing within your code, neither buy new hardware.
+ - **Plugin** based.
 
 
 ##POC is for the business
@@ -44,5 +47,9 @@ order: 4
 
 ##POC is for the environment
  - As more and more PHP server operates in the world proper caching can save energy and vaste produced.
- - Poc uses way less resources than an database backed page generation in php, you save the resources of the planet by using proper cachhing. 
+ - Poc uses way less resources than an database backed page generation in php, you save the resources of the planet by using proper cachhing.
+
+##What is not POC?
+Poc is **not the Silver Bulltet for PHP**, but helps you the get colser to it. :)
+
 
