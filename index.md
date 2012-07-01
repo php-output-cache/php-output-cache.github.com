@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Php Output Caching Home 
-tabify: h2
-tagline: 
 ---
 {% include JB/setup %}
 

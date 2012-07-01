@@ -22,6 +22,7 @@ Poc is an **Output Caching framework** written **for PHP**.
  - Poc is **opensource**.
 
 ##POC is for Developers 
+ - The system is **compatible** with all of your application that supports PHP 5.3 and above.
  - Provide an **easy to use tool** for developers when they have to **solve performance problems**.
  - Make it as **flexible** as possible.
  - Applying this **cache framework** minimal or in most cases one line modification into existing code. 
