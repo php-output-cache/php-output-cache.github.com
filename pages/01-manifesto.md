@@ -25,8 +25,8 @@ POC is an **Output Caching framework** written **for PHP**.
  - The system is **compatible** with all your applications that support PHP 5.3 or above.
  - POC provides an **easy to use tool** to **solve performance problems**.
  - It makes cache implementation as **flexible** as possible.
- - **POC** is "hot pluggable" to any system. Applying it to existing projects requires minimal (in most cases only one line) modification of your existing code. 
- - It can be easily turned on/off.
+ - **POC** is **"hot pluggable"** to any system. Applying it to existing projects requires minimal (in most cases only one line) modification of your existing code. 
+ - It can be **easily turned on/off**.
  - Installation and basic setup can be done **in 5 minutes.**
  - Caching should **not make your code more complex**, and this process can be **transparent**.
  - We made it **scalable** to be able to run from a **single machine** configuration to any **complex webfarms**.
@@ -38,7 +38,7 @@ POC is an **Output Caching framework** written **for PHP**.
 
 
 ##POC is for the business
- - Implementing a good caching solution for you site is crucial for performance but it can take a lot of development time. This software helps you reduce this time significantly.
+ - Implementing a good caching solution for you site is **crucial for performance** but it can take a lot of development time. This software helps you reduce this time significantly.
  - The **fast**er your **site** the **higher search engine ranking it gets**.
  - POC helps you reduce the hardware needed to run your web applications and **saves you money**.
 
@@ -47,8 +47,8 @@ POC is an **Output Caching framework** written **for PHP**.
  - Anyone can modify and even sell it without the author's approval.
 
 ##POC is for the environment
- - As more and more PHP servers operate in the world proper caching becomes more important because it can save energy and reduce waste.
- - POC uses way less resources than a database backed PHP page generation in real time so you not only save time but you save the resources of the planet as well by using proper caching.
+ - As more and more PHP servers operate in the world proper **caching becomes** more **important** because it can **save energy** and **reduce waste**.
+ - POC uses way **less resources than** a database backed **PHP page generation** in real time so you not only save time but you **save the resources of the planet** as well by using proper caching.
 
 ##What POC is not?
 POC is **not a silver bullet for all your PHP performance problems**, but the second best thing to it.
