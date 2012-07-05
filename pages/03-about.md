@@ -11,12 +11,6 @@ order: 2
 
 [![Build Status](https://secure.travis-ci.org/php-output-cache/poc.png?branch=master)](http://travis-ci.org/php-output-cache/poc)
 
-This is the root directory of the
-POC that stands for PHP Output Caching.
-
-An article about the
-    POC: http://www.leaseweblabs.com/2012/01/poc-flexible-php-output-caching/
-
 ## Description
 
 The aim of this project is to create an easy to use but really flexible generic
