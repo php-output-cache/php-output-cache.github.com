@@ -7,13 +7,13 @@ order: 3
 ---
 {% include JB/setup %}
 ##It seemes it is a reverse proxy 
-Poc is not a revese proxy altought it does something similar to it. This tool is embedded within your application it can see more things that a reverse proxy. Poc can work happily together with other reverse proxyes, helping them out if it is really needed.
+POC is not a reverse proxy although it does something similar to it. Because this tool is embedded in your application, it can see more things than a reverse proxy. But POC is not a lone soldier but a real teamplayer, it can work easily together with reverse proxies, helping them if needed.
 
-##Well is it better than the other proxies written in C?
-Caching HTTP Reverse proxyes like Varnish are really nice tools for proxying pages, if your application is written properly They can use the request headers of the client and the server in order to be able to cache or not the content is being produced on the server side. This amoutn of infomation in most cases is not enough to make proxying really efficient. Or you have to develop custom (proxy) server and (http server side) client applications to be able to handle this situations. It takes a lot of time and effper, also you have modify your application.
+##Well, is it better than other proxies written in C?
+Caching HTTP reverse proxies like Varnish are really nice tools for proxying pages if your application is written properly. They can use the request headers of the client and the server in order to be able to decide whether or not to cache the content produced on the server side. But in most cases, this amount of infomation is not enough to make proxying really efficient. Only if you develop custom (proxy) server and (http server side) client applications to handle these situations. Not only does it take a lot of time and effort but you also have to modify your application.
 
-As POC can see the internal state of your application it is easier for this to be abble to cache or nat cache the contents of a page if you can define for instance blacklisting for certains states within your application. For instance if the admin is logged in don't apply any caching for her session.
+As POC can see the internal state of your application it can decide more easily whether or not to cache the contents of a page. You can simply define the exact conditions of caching your application with the help of black- and whitelists. For instance if the admin is logged in do not apply any caching for her session.
 
-##POC uses huge libraries like Docrine2, how can it be effective and fast?
-As Poc builts on stable and tested tools we can keep the code maintainable, testable  and flexible. Altough these tools only used when it is neede Doctine is used for the cache Tagging feature olyon cache writes and invalidation on a really easy table structure. As Doctrne2 also uses the PSR0 standard only the required classes are loaded into the memory this part is fast enough, but be free to wrtie some native sql implemetation for this feature if you need it.
+##POC uses huge libraries like Doctrine2, so how can it be effective and fast?
+As POC is built on stable and tested tools we can keep the code maintainable, testable  and flexible. Doctrine is used for the cache tagging feature only on cache writes and invalidation and it works on a relatively small and efficient table structure. As Doctrine2 also uses the PSR0 standard only the required classes are loaded into the memory so it doesn't slow down your application much, but feel free to write a native SQL implemetation of this feature if you need it.
 
