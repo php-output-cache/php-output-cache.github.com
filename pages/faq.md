@@ -17,3 +17,17 @@ As POC can see the internal state of your application it can decide more easily 
 ##POC uses huge libraries like Doctrine2, so how can it be effective and fast?
 As POC is built on stable and tested tools we can keep the code maintainable, testable  and flexible. Doctrine is used for the cache tagging feature only on cache writes and invalidation and it works on a relatively small and efficient table structure. As Doctrine2 also uses the PSR0 standard only the required classes are loaded into the memory so it doesn't slow down your application much, but feel free to write a native SQL implemetation of this feature if you need it.
 
+##How it can add extra protetion to my application?
+For instance POC contains a CIA module that makes your application cached part really efficient on resources. For example if you have a slow part in your application and many client use it frequently the cache is not generated muliple times, all client waits for the already generating page. Sounds good right? To enable this feature is enough to add one line to the Poc part of your code:).
+This can help you to protect your page against DDOS services, of coures it is not enouhh alone, but can help.
+
+##How POC can be good for the SEO of my site?
+The fastest is your site the better your SEO gets! And Poc is really good at speed.
+
+##It is not enough to cache the output if you want it good efficiently.
+True in some situations, but if your application produces output it is wise to take into consideration if it was worthy to cache the output, because it is really efficient, and fast.
+
+##For what kind of pages would you suggest to use poc?
+Everywhere where you need perfoeance. For example Poc is optimal for Blog engines public websites, but of course intranet corporate software can use it as well.
+
+
