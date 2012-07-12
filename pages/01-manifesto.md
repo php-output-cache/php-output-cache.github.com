@@ -18,7 +18,7 @@ POC is an **Output Caching framework** written **for PHP**.
  - It solves complex problems in an **easy** way.
  - It's **Cloud** ready.
  - It **enhances** your application's **SEO** value.
- - POC makes your software **robust** and gains the **high availability** of your software. 
+ - POC makes your software **robust** and increases its **availability**. 
  - POC is **open source**.
 
 ##POC is for Developers
@@ -28,11 +28,11 @@ POC is an **Output Caching framework** written **for PHP**.
  - **POC** is **"hot pluggable"** to any system. Applying it to existing projects requires minimal (in most cases only one line) modification of your existing code. 
  - It can be **easily turned on/off**.
  - Installation and basic setup can be done **in 5 minutes.**
- - Caching should **not make your code more complex**, and this process can be **transparent**.
+ - Caching should **not make your code more complex**, and POC lives up to this expectation.
  - We made it **scalable** to be able to run from a **single machine** configuration to any **complex webfarms**.
  - We built it on **Symfony2 components** to **increase** the projects **stability** and **decrease** its **complexity**.
  - **Easy** and custom **configuration** that meets your needs.
- - It is **continously integrated**!
+ - It is **continously integrated** so you can use latest builds without worrying much about stability.
  - **Does not hurt your current logic and **existing **infrastructure**, so you don't have to rewrite anything in your code, neither buy new hardware.
  - POC is **plugin** based.
 
